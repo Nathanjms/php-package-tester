@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ccbd816a07b206f971042295b899d1ba",
+    "content-hash": "cc74ef783bc76fcb5f767f136b4b0ec1",
     "packages": [
         {
             "name": "brick/math",
@@ -1712,6 +1712,34 @@
                 }
             ],
             "time": "2022-07-24T11:55:47+00:00"
+        },
+        {
+            "name": "nathanjms/blog-package",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "../Packages/demo-package",
+                "reference": "8d440c70d8972a45fb6738ed1842d83645ff5c01"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Nathanjms\\BlogPackage\\": "src"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nathan James",
+                    "email": "nathan@nathanjms.co.uk"
+                }
+            ],
+            "description": "A demo package",
+            "transport-options": {
+                "relative": true
+            }
         },
         {
             "name": "nesbot/carbon",
@@ -7816,7 +7844,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "nathanjms/blog-package": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
